@@ -1,31 +1,84 @@
+body {
+    background-color: #00A49A;
+}
+
 .navBar {
     font-family: 'Hack';
-    display: inline;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
 }
 
 .navBar .logo {
     width: 15%;
     vertical-align: middle;
+    padding: 5px;
 }
 
 .navBar a {
-    border-color: blue;
+    border-color: #214C89;
     border-radius: 80px;
     border-style: solid;
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
     margin-left: 15px;
-    color: blue;
+    color: #214C89;
     text-decoration: none;
+    transition: all 0.3s ease 0s;
 }
 
 .navBar a:hover {
-    background-color: blue;
+    background-color: #214C89;
     color: white;
 }
 
 .navBar a.active {
-    background-color: blue;
+    background-color: #214C89;
     color: white;    
+}
+
+.mainContent {
+    position: absolute;
+    margin-top: 8%;
+}
+
+.pacman {
+    display: inline-block;
+    text-align: center;
+}
+
+.pacmanImages {
+    width: 10%;
+}
+
+.pacmanImages.fantoma {
+    width: 7%;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 30pt;
+    font-family: 'Hack';
+}
+
+.helpText {
+    text-align: center;
+    font-size: 16pt;
+    font-family: 'Hack';
+}
+
+.playButton {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.playImage {
+    
+    width: 20%;
+    
 }
