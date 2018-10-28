@@ -1,0 +1,25 @@
+.navBar {
+    margin-top: 2%;
+    font-family: 'Hack';
+}
+
+.navBar a {
+    border-color: blue;
+    border-radius: 100%;
+    border-style: solid;
+    padding: 1%;
+    margin-left: 15px;
+    background-color: white;
+    color: blue;
+    text-decoration: none;
+}
+
+.navBar a:hover {
+    background-color: blue;
+    color: white;
+}
+
+.navBar a.active {
+    background-color: blue;
+    color: white;    
+}
