@@ -78,7 +78,10 @@ body {
 }
 
 .playImage {
-    
     width: 20%;
-    
+    transition: opacity 0.3s ease 0s;
+}
+
+.playImage:hover {
+    opacity: 0.8;
 }
