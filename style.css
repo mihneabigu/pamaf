@@ -1,15 +1,21 @@
 .navBar {
-    margin-top: 2%;
     font-family: 'Hack';
+    display: inline;
+}
+
+.navBar .logo {
+    width: 15%;
+    vertical-align: middle;
 }
 
 .navBar a {
     border-color: blue;
-    border-radius: 100%;
+    border-radius: 80px;
     border-style: solid;
-    padding: 1%;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-left: 15px;
-    background-color: white;
     color: blue;
     text-decoration: none;
 }
