@@ -13,18 +13,18 @@
         <img src="../img/logo.png" alt="Pamaf" class="logo">
     </nav>
     <div>
-        <canvas id="gameBox" width="900" height="500"></canvas>
+        <canvas id="gameBox"></canvas>
         <div class="smol_box" id="login_box">
             <img src="../img/Pac-Man.gif" alt="pacman_gif" style="width:70px">
             <p>Connect with</p>
             <span class="login">
-                <button onclick="proceed_login()">
+                <button onclick="change_div('login_box','gametype_box')">
                     <img src="../img/facebook.png" alt="facebook-logo">
                 </button>
-                <button onclick="proceed_login()">
+                <button onclick="change_div('login_box','gametype_box')">
                     <img src="../img/instagram-icon.png" alt="instagram-logo">
                 </button>
-                <button onclick="proceed_login()">
+                <button onclick="change_div('login_box','gametype_box')">
                     <img src="../img/github.png" alt="github-logo">
                 </button>
             </span>
@@ -32,9 +32,25 @@
         <div class="smol_box" id="gametype_box">
             <p style="text-align:center">Choose gameplay type</p>
             <div>
-                <img src="../img/singleplayer.png" alt="singleplayer" onclick="proceed_gametype()">
-                <img src="../img/multiplayer.png" alt="multiplayer" style="width: 70%" onclick="proceed_gametype()">
+                <img class="gametype_img" src="../img/singleplayer.png" alt="singleplayer" onclick="change_div('gametype_box','gameBox')">
+                <img class="gametype_img" src="../img/multiplayer.png" alt="multiplayer" style="width: 70%" onclick="change_div('gametype_box','gametype_mp')">
             <div>
+        </div>
+        <div class="smol_box" id="gametype_mp">
+            <form action="">
+                <input type="text" name="room_key" id="">
+                <button onclick="change_div('gametype_mp','gametype_mp_join')">JOIN</button>
+                <button onclick="change_div('gametype_mp','gametype_mp_create')">GENERATE ROOM</button>
+            </form>
+            
+        </div>
+        <div class="smol_box" id="gametype_mp_join">
+            <input type="text" name="generated_key" id="" value="342ASLK">
+            <button onclick="change_div('gametype_mp_join','gametype_box')">Leave party</button>
+        </div>
+        <div class="smol_box" id="gametype_mp_create">
+            <input type="text" name="generated_key" id="" value="342ASLK">
+            <button onclick="change_div('gametype_mp_create','gameBox')">GO!</button>
         </div>
     </div>
 </body>

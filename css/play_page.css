@@ -11,6 +11,8 @@ body {
     margin-right: auto;
     margin-left: 14%;
     padding: 10px;
+    height: 500px;
+    width: 900px;
     display: none;
 }
 .smol_box {
@@ -46,15 +48,24 @@ span .login {
     height: 200px;
     display: none;
 }
-#gametype_box img {
+.gametype_img {
     max-width: 70px;
     margin-left: 15%;
     margin-right: 7%;
 }
-#gametype_box div :hover {
+.gametype_img:hover {
     background-color: burlywood;
     border-style: solid;
     border-color: brown;
     border-width: 2px;
     border-radius: 10%;
+}
+#gametype_mp {
+    display: block;
+}
+#gametype_mp_join {
+    display: none;
+}
+#gametype_mp_create {
+    display: none;
 }
