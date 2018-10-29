@@ -3,12 +3,6 @@ html, body {
     padding: 0;
 }
 
-.id1 {
-    margin-top: 20px;
-    margin-top: 20px;
-    border: 1px solid black;
-}
-
 .logoHistory {
     display: block;
     text-align: center;
@@ -25,8 +19,8 @@ html, body {
     /*border: 1px solid red;*/
 }
 
-.section1 {
-    /*border: 3px solid red;*/
+/*.section1 {
+    border: 3px solid red;
     background-color: #E9E9E9;
 }
 
@@ -37,13 +31,13 @@ html, body {
     font-family: serif;
     margin-left: 3%;
     margin-right: 24%;
-    /*border:1px solid yellow;*/
+    border:1px solid yellow;
 }
 
 .text1 {
-    /*border: 1px solid red;*/
+    border: 1px solid red;
     color: #032E37;
-    /*background-color:green;*/
+    background-color:green;
     text-align: justify;
     font-size: 20px;
     font-family: serif;
@@ -55,21 +49,45 @@ html, body {
 .gif1 {
     float: left;
     clear: left;
-    /*border: 2px solid black;*/
+    border: 2px solid black;
     margin-left: 18%;
     margin-right: 12%;
     border-radius: 30px;
+}*/
+
+.section11 {
+    /*border: 3px solid red;*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    background-color: #E9E9E9;
 }
 
-.gif2 {
-    display: block;
+.text01 {
+    color: #032E37;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px;
-    border-color: #D9D9D9;
+    font-size: 30px;
+    font-family: serif;
+    margin-left: 13%;
+    margin-right: 22%;
+    /*border: 2px solid red;*/
+}
+
+.text11 {
+    /*border: 2px solid red;*/
+    color: #032E37;
+    text-align: justify;
+    font-size: 20px;
+    font-family: serif;
+    margin-left: 13%;
+    margin-right: 22%;
+}
+
+.gif11 {
+    /*border: 2px solid black;*/
     border-radius: 30px;
-    border-style:solid;
+    margin-left: 37%;
+    max-width: 54%;
 }
 
 .section2 {
@@ -88,7 +106,7 @@ html, body {
 
 .text2 {
     /*border: 2px solid red;*/
-    color: #D9D9D9;
+    color: #E9E9E9;
     text-align: center;
     font-size: 30px;
     font-family: serif;
@@ -131,6 +149,138 @@ html, body {
     margin-left: 15%;
 }
 
+.tooltip {
+    position: relative;
+}
+
+.tooltiptextBlinky {
+    font-size: 20px;
+    background-color: #E9E9E9;
+    color: #032E37;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 25px;
+    position: absolute;
+    z-index: 1;
+    bottom: 108%;
+    left: 4%;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.tooltiptextInky {
+    font-size: 20px;
+    background-color: #E9E9E9;
+    color: #032E37;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 25px;
+    position: absolute;
+    z-index: 1;
+    bottom: 108%;
+    left: 10%;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.tooltiptextClyde {
+    font-size: 20px;
+    background-color: #E9E9E9;
+    color: #032E37;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 25px;
+    position: absolute;
+    z-index: 1;
+    bottom: 108%;
+    left: 6%;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.tooltiptextPinky {
+    font-size: 20px;
+    background-color: #E9E9E9;
+    color: #032E37;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 25px;
+    position: absolute;
+    z-index: 1;
+    bottom: 108%;
+    left: 6%;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.tooltip .tooltiptextBlinky::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #E9E9E9 transparent transparent transparent;
+}
+
+.tooltip .tooltiptextInky::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #E9E9E9 transparent transparent transparent;
+}
+
+.tooltip .tooltiptextClyde::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #E9E9E9 transparent transparent transparent;
+}
+
+.tooltip .tooltiptextPinky::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #E9E9E9 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptextBlinky {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip:hover .tooltiptextInky {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip:hover .tooltiptextClyde {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip:hover .tooltiptextPinky {
+    visibility: visible;
+    opacity: 1;
+}
+
 .text5 {
     /*border: 2px solid red;*/
     color: #032E37;
@@ -145,7 +295,7 @@ html, body {
     /*border: 5px solid black;*/
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 150px auto auto;
+    grid-template-rows: 170px auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 30px;
     justify-items: center;
@@ -172,8 +322,10 @@ html, body {
     text-align: center;
     font-size: 20px;
     font-family: serif;
-    margin-left: 20%;
-    margin-right: 20%;
+    /*margin-left: 20%;
+    margin-right: 20%;*/
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .tilt {
