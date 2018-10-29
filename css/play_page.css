@@ -1,0 +1,60 @@
+body {
+    background-color: blueviolet;
+}
+#gameBox {
+    background: green;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: 14%;
+    padding: 10px;
+    display: none;
+}
+.smol_box {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  margin-top: 120px;
+  padding: 45px;
+  text-align: center;
+  border-radius: 10%;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#login_box {
+    max-width: 150px;
+    font-size: 20px;
+    display: none;
+}
+span .login {
+    display: inline;
+}
+.login img {
+    max-width: 30px;
+}
+#gametype_box {
+    text-align: justify;
+    font-size: 25px;
+    max-width: 300px;
+    height: 200px;
+    display: block;
+}
+#gametype_box img {
+    max-width: 70px;
+    margin-left: 15%;
+    margin-right: 7%;
+}
+#gametype_box div :hover {
+    background-color: burlywood;
+    border-style: solid;
+    border-color: brown;
+    border-width: 2px;
+    border-radius: 10%;
+}

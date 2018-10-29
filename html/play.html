@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Pamaf</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/play_page.css" />
+    <script type="text/javascript" src="../js/play_page.js"></script>
+    
+</head>
+<body>
+    <nav class="navBar">
+        <img src="../img/logo.png" alt="Pamaf" class="logo">
+    </nav>
+    <div>
+        <canvas id="gameBox" width="900" height="500"></canvas>
+        <div class="smol_box" id="login_box">
+            <img src="../img/Pac-Man.gif" alt="pacman_gif" style="width:70px">
+            <p>Connect with</p>
+            <span class="login">
+                <button onclick="changeDiv(login_box,gametype_box)">
+                    <img src="../img/facebook.png" alt="facebook-logo">
+                </button>
+                <button onclick="changeDiv(login_box,gametype_box)">
+                    <img src="../img/instagram-icon.png" alt="instagram-logo">
+                </button>
+                <button onclick="changeDiv(login_box,gametype_box)">
+                    <img src="../img/github.png" alt="github-logo">
+                </button>
+            </span>
+        </div>
+        <div class="smol_box" id="gametype_box">
+            <p style="text-align:center">Choose gameplay type</p>
+            <div>
+                <img src="../img/singleplayer.png" alt="singleplayer">
+                <img src="../img/multiplayer.png" alt="multiplayer" style="width: 70%">
+            <div>
+        </div>
+    </div>
+</body>
+</html>
