@@ -1,5 +1,5 @@
 body {
-    background-color: #00A49A;
+    background-color: #032E37;
 }
 
 .navBar {
@@ -56,7 +56,7 @@ body {
     width: 10%;
 }
 
-.pacmanImages.fantoma {
+.fantoma {
     width: 7%;
 }
 
@@ -64,12 +64,14 @@ body {
     text-align: center;
     font-size: 30pt;
     font-family: 'Hack';
+    color: #D9D9D9;
 }
 
 .helpText {
     text-align: center;
     font-size: 16pt;
     font-family: 'Hack';
+    color: #D9D9D9;
 }
 
 .playButton {
