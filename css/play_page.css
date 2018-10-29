@@ -1,13 +1,13 @@
 body {
-    background-color: blueviolet;
+    background-color: #00A49A;
 }
 #gameBox {
-    background: green;
+    background: lightgreen;
     border-style: solid;
     border-color: black;
     border-width: 2px;
     border-radius: 5%;
-    margin-top: 20px;
+    margin-top: 70px;
     margin-right: auto;
     margin-left: 14%;
     padding: 10px;
@@ -19,7 +19,7 @@ body {
   background: #FFFFFF;
   max-width: 360px;
   margin: 0 auto 100px;
-  margin-top: 120px;
+  margin-top: 150px;
   padding: 45px;
   text-align: center;
   border-radius: 10%;
@@ -31,7 +31,7 @@ body {
 #login_box {
     max-width: 150px;
     font-size: 20px;
-    display: none;
+    display: block;
 }
 span .login {
     display: inline;
@@ -44,7 +44,7 @@ span .login {
     font-size: 25px;
     max-width: 300px;
     height: 200px;
-    display: block;
+    display: none;
 }
 #gametype_box img {
     max-width: 70px;
