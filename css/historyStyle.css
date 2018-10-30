@@ -340,7 +340,6 @@ html, body {
     align-items: center;
     text-align: center; /*sau justify-items: center doar*/
     width: 90%;
-    height: 35%;
     margin-left: 5%;
     background-color: inherit;
 }

@@ -87,3 +87,23 @@ body {
 .playImage:hover {
     opacity: 0.8;
 }
+
+.footer {
+    border-top: 1px solid #E9E9E9;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    align-items: center;
+    text-align: center; /*sau justify-items: center doar*/
+    width: 90%;
+    margin-left: 5%;
+    background-color: inherit;
+    /*transform: translate(0%, 530%);*/
+}
+
+.ftr {
+    /*border: 1px solid red;*/
+    font-size: 18px;
+    color: #E9E9E9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

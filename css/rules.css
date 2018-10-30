@@ -32,3 +32,28 @@
     border: 2px solid black;
     padding: 10px;
 }
+
+.footer {
+    border-top: 1px solid #E9E9E9;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    align-items: center;
+    text-align: center; /*sau justify-items: center doar*/
+    width: 90%;
+    margin-left: 5%;
+    background-color: inherit;
+    /*transform: translate(0%, 530%);*/
+}
+
+.ftr {
+    */border: 1px solid red;*/
+    font-size: 18px;
+    color: #E9E9E9;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
