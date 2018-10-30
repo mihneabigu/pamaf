@@ -89,6 +89,10 @@ span .login {
     font-size: 20px;
     display: none;
 }
+.settings_img {
+    width: 20%;
+    margin-left: 18%;
+}
 .language {
     display: inline;
 }
@@ -96,6 +100,7 @@ span .login {
     text-align: left;
     max-width: 20%;
     font-size: 20px;
+    text-align: justify;
     display: none;
 }
 .back_img {
@@ -104,4 +109,8 @@ span .login {
 .back_img:hover {
     opacity: 0.5;
     cursor: pointer;
+}
+.help_img {
+    width: 25%;
+    margin-left: 16%;
 }
