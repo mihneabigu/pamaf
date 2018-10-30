@@ -1,3 +1,8 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -87,7 +92,7 @@ html, body {
     /*border: 2px solid black;*/
     border-radius: 30px;
     margin-left: 37%;
-    max-width: 54%;
+    max-width: 50%;
 }
 
 .section2 {
@@ -326,6 +331,26 @@ html, body {
     margin-right: 20%;*/
     padding-left: 15%;
     padding-right: 15%;
+}
+
+.footer {
+    border-top: 1px solid #E9E9E9;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    align-items: center;
+    text-align: center; /*sau justify-items: center doar*/
+    width: 90%;
+    height: 35%;
+    margin-left: 5%;
+    background-color: inherit;
+}
+
+.ftr {
+    /*border: 1px solid red;*/
+    font-size: 18px;
+    color: #E9E9E9;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .tilt {

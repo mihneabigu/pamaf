@@ -1,0 +1,135 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.logoContact {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    /*border: 1px solid red;*/
+}
+
+.box {
+    position: relative;
+    /*left: 50%;
+    transform: translate(-50%, -17%);*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3%;
+    margin-bottom: 3%;
+    width: 550px;
+    padding: 40px;
+    box-sizing: border-box;
+    max-width: 100%;
+    /*background: white;*/
+}
+
+.box input {
+    padding: 10px 15px;
+    margin-bottom: 30px;
+}
+
+.box textarea {
+    height: 80px;
+    padding: 10px 15px;
+    margin-bottom: 45px;
+}
+
+.box input, .box textarea {
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #E9E9E9;
+    transition: 0.3s ease-in-out;
+    color: #E9E9E9;
+}
+
+.box form div {
+    position: relative;
+}
+
+.box form div label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #E9E9E9;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.box input:focus + label, .box textarea:focus + label, 
+.box input:valid + label, .box textarea:valid + label {
+    top: -13px;
+    color: #B6C8A9;
+    font-size: 14px;
+}
+
+.box input:focus, .box textarea:focus, 
+.box input:valid, .box textarea:valid {
+    border-bottom: 2px solid #B6C8A9;
+}
+
+.submitButton {
+    background-color: inherit;
+    border: 2px solid #B6C8A9;
+    color: #B6C8A9;
+    padding: 10px 35px;
+    font-size: 20px;
+    font-family: serif;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #B6C8A9;
+    border: 2px solid #B6C8A9;
+    color: #032E37;
+}
+
+.submitButton:focus {
+    outline: none;
+}
+
+.btn {
+    text-align: center;
+}
+
+.relativeForFooter {
+    position: relative;
+    margin-top: 20%;
+    max-width: 100%;
+    border: 1px solid red;
+}
+
+.footer {
+    border-top: 1px solid #E9E9E9;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    align-items: center;
+    text-align: center; /*sau justify-items: center doar*/
+    width: 90%;
+    height: 35%;
+    margin-left: 5%;
+    background-color: inherit;
+    /*transform: translate(0%, 530%);*/
+}
+
+.ftr {
+    /*border: 1px solid red;*/
+    font-size: 18px;
+    color: #E9E9E9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
