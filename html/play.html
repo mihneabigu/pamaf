@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Pamaf</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.png" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/play_page.css" />
     <script type="text/javascript" src="../js/play_page.js"></script>
@@ -38,6 +39,7 @@
             </span>
         </div>
         <div class="smol_box" id="options_box">
+            <img src="../img/book.png" alt="book"><br>
             <button class="cool_button" onclick="change_div('options_box','gameBox')">Singleplayer</button><br><br>
             <button class="cool_button" onclick="change_div('options_box','gameBox')">Multiplayer</button><br><br>
             <button class="cool_button" onclick="change_div('options_box','settings_box')">Settings</button><br><br>
@@ -48,13 +50,15 @@
             <input type="checkbox" name="volume">Mute volume<br><br>
             <div class="language">
                 Language
-                <input type="radio" name="language1">RO
-                <input type="radio" name="language2">EN
+                <input type="radio" name="language" value="Romanian">RO
+                <input type="radio" name="language" value="English">EN
             </div>
         </div>
         <div class="smol_box" id="help_box">
-                <img src="../img/arrow.png" class="back_img" alt="back" onclick="change_div('help_box','options_box')"><br><br>
-            Buttons are simple. Just use W,A,S,D or the arrow keys on your keyboard to move around.
+            <img src="../img/arrow.png" class="back_img" alt="back" onclick="change_div('help_box','options_box')"><br><br>
+            Buttons are simple. 
+            Just use W,A,S,D or the arrow keys on your keyboard to move around.
+            For more information, please check out the Rules section.
         </div>
     </div>
 </body>

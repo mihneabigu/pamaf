@@ -1,9 +1,9 @@
 body {
     background-color: #032E37;
-    background-image: url("../img/bgblur.jpg");
+    background-image: url("../img/bg2blur.jpg");
 }
 #gameBox {
-    background: white;
+    background: rgba(255,255,255,.5);
     border-style: solid;
     border-color: black;
     border-width: 2px;
@@ -20,20 +20,17 @@ body {
     margin-top: 2%;
     border-radius: 5%;
 }
-
 .back_img_map {
     width: 5%;
     float: left;
 }
-
 .back_img_map:hover {
     opacity: 0.5;
     cursor: pointer;
 }
-
 .smol_box {
   position: relative;
-  background: #FFFFFF;
+  background: rgba(255,255,255,.9);
   max-width: 360px;
   margin: 0 auto 100px;
   margin-top: 15%;
@@ -42,8 +39,7 @@ body {
   border-radius: 15%;
   border-color: black;
   border-style: solid;
-  border-width: 2px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-width: 3px;
 }
 #login_box {
     max-width: 15%;
@@ -63,19 +59,23 @@ span .login {
 }
 #options_box {
     display: none;
-    max-width: 15%;
+    max-width: 13%;
     text-align: center;
 }
+#options_box img {
+    width: 30%;
+}
 #options_box .cool_button:hover::before {
-    content: '>> ';
+    content: '▶ ';
 }
 .cool_button {
     font-family: sans-serif;
     font-size: 12pt;
+    border-width: 3px;
     border-radius: 80px;
     border-style: solid;
-    padding: 10px;
     border-color: #214C89;
+    padding: 10px;
     transition: all 0.3s ease 0s;
 }
 .cool_button:hover {
@@ -101,7 +101,6 @@ span .login {
 .back_img {
     width: 20%;
 }
-
 .back_img:hover {
     opacity: 0.5;
     cursor: pointer;
