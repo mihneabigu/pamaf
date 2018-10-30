@@ -8,9 +8,7 @@ body {
     border-color: black;
     border-width: 2px;
     border-radius: 5%;
-    margin-top: 8%;
-    margin-right: auto;
-    margin-left: 14%;
+    margin: 8% auto;
     padding: 10px;
     height: 500px;
     width: 900px;
@@ -48,7 +46,6 @@ span .login {
 }
 #options_box {
     display: none;
-    text-align: left;
     max-width: 15%;
     text-align: center;
 }
@@ -67,4 +64,28 @@ span .login {
 .cool_button:hover {
     background-color: #214C89;
     color: white;
+    cursor: pointer;
+}
+#settings_box {
+    text-align: left;
+    max-width: 20%;
+    font-size: 20px;
+    display: none;
+}
+.language {
+    display: inline;
+}
+#help_box {
+    text-align: left;
+    max-width: 20%;
+    font-size: 20px;
+    display: none;
+}
+.back_img {
+    width: 20%;
+}
+
+.back_img:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
