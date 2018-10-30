@@ -12,7 +12,13 @@ body {
     padding: 10px;
     height: 500px;
     width: 900px;
+    text-align: center;
     display: none;
+}
+#gameBox img {
+    width:90%;
+    margin-top: 2%;
+    border-radius: 5%;
 }
 .smol_box {
   position: relative;
