@@ -2,6 +2,11 @@ body {
     background-color: #032E37;
     background-image: url("../img/bg2blur.jpg");
 }
+input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
 #gameBox {
     background: rgba(255,255,255,.5);
     border-style: solid;
@@ -36,6 +41,7 @@ body {
   margin-top: 15%;
   padding: 45px;
   text-align: center;
+  font-size: 20px;
   border-radius: 15%;
   border-color: black;
   border-style: solid;
@@ -43,7 +49,6 @@ body {
 }
 #login_box {
     max-width: 15%;
-    font-size: 20px;
     display: block;
 }
 #login_box > img {
@@ -86,8 +91,11 @@ span .login {
 #settings_box {
     text-align: left;
     max-width: 20%;
-    font-size: 20px;
     display: none;
+}
+.settings_img {
+    width: 20%;
+    margin-left: 18%;
 }
 .language {
     display: inline;
@@ -95,7 +103,7 @@ span .login {
 #help_box {
     text-align: left;
     max-width: 20%;
-    font-size: 20px;
+    text-align: justify;
     display: none;
 }
 .back_img {
@@ -104,4 +112,8 @@ span .login {
 .back_img:hover {
     opacity: 0.5;
     cursor: pointer;
+}
+.help_img {
+    width: 25%;
+    margin-left: 16%;
 }

@@ -6,7 +6,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../img/icon.png" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/play_page.css" />
-    <script type="text/javascript" src="../js/play_page.js"></script>
+    <script src="../js/play_page.js"></script>
     
 </head>
 <body>
@@ -46,8 +46,11 @@
             <button class="cool_button" onclick="change_div('options_box','help_box')">Help</button>
         </div>
         <div class="smol_box" id="settings_box">
-            <img src="../img/arrow.png" class="back_img" alt="back" onclick="change_div('settings_box','options_box')"><br><br>
-            <input type="checkbox" name="volume">Mute volume<br><br>
+            <img src="../img/arrow.png" class="back_img" alt="back" onclick="change_div('settings_box','options_box')">
+            <img src="../img/settings2.png" class="settings_img" alt="settings">
+            <br><br>
+            Mute volume
+            <input type="checkbox" name="volume"><br><br>
             <div class="language">
                 Language
                 <input type="radio" name="language" value="Romanian">RO
@@ -55,7 +58,9 @@
             </div>
         </div>
         <div class="smol_box" id="help_box">
-            <img src="../img/arrow.png" class="back_img" alt="back" onclick="change_div('help_box','options_box')"><br><br>
+            <img src="../img/arrow.png" class="back_img" alt="back" onclick="change_div('help_box','options_box')">
+            <img src="../img/help2.png" class="help_img" alt="controller">
+            <br><br>
             Buttons are simple. 
             Just use W,A,S,D or the arrow keys on your keyboard to move around.
             For more information, please check out the Rules section.
