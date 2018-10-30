@@ -10,16 +10,27 @@ body {
     border-radius: 5%;
     margin: 8% auto;
     padding: 10px;
-    height: 500px;
+    height: 550px;
     width: 900px;
     text-align: center;
     display: none;
 }
-#gameBox img {
+#gameBox .map {
     width:90%;
     margin-top: 2%;
     border-radius: 5%;
 }
+
+.back_img_map {
+    width: 5%;
+    float: left;
+}
+
+.back_img_map:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 .smol_box {
   position: relative;
   background: #FFFFFF;
