@@ -67,3 +67,7 @@ p {
     margin: 0;
     padding: 0;
 }
+
+.scoreboard table {
+    text-align: center;
+}
