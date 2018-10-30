@@ -1,13 +1,14 @@
 body {
-    background-color: #00A49A;
+    background-color: #032E37;
+    background-image: url("../img/bg2.jpg");
 }
 #gameBox {
-    background: lightgreen;
+    background: white;
     border-style: solid;
     border-color: black;
     border-width: 2px;
     border-radius: 5%;
-    margin-top: 70px;
+    margin-top: 8%;
     margin-right: auto;
     margin-left: 14%;
     padding: 10px;
@@ -17,11 +18,10 @@ body {
 }
 .smol_box {
   position: relative;
-  z-index: 1;
   background: #FFFFFF;
   max-width: 360px;
   margin: 0 auto 100px;
-  margin-top: 150px;
+  margin-top: 15%;
   padding: 45px;
   text-align: center;
   border-radius: 15%;
@@ -35,6 +35,11 @@ body {
     font-size: 20px;
     display: block;
 }
+#login_box > img {
+    width: 50%;
+    margin-top: -20%;
+    margin-bottom: -20%;
+}
 span .login {
     display: inline;
 }
@@ -42,9 +47,13 @@ span .login {
     max-width: 30px;
 }
 #options_box {
-    text-decoration: none;
+    display: none;
     text-align: left;
     max-width: 15%;
+    text-align: center;
+}
+#options_box .cool_button:hover::before {
+    content: '>> ';
 }
 .cool_button {
     font-family: sans-serif;

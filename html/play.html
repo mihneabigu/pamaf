@@ -9,13 +9,18 @@
     
 </head>
 <body>
-    <nav class="navBar" style="background: none;">
+    <nav class="navBar">
         <img src="../img/logo.png" alt="Pamaf" class="logo">
+        <a href="../index.html">Home</a>
+        <a href="./rules.html">Rules</a>
+        <a href="./scoreboard.html">Scoreboard</a>
+        <a href="./html/history.html">History</a>
+        <a href="./html/contact.html">Contact</a>
     </nav>
     <div>
         <canvas id="gameBox"></canvas>
         <div class="smol_box" id="login_box">
-            <img src="../img/Pac-Man.gif" alt="pacman_gif" style="width:50px">
+            <img src="../img/pacm.gif" alt="pacman_gif">
             <p>Connect with</p>
             <span class="login">
                 <button class="cool_button" onclick="change_div('login_box','options_box')">
@@ -30,7 +35,10 @@
             </span>
         </div>
         <div class="smol_box" id="options_box">
-            <button class="cool_button" onclick="window.location.href='../index.html'">back</button>
+            <button class="cool_button" onclick="change_div('options_box','gameBox')">Singleplayer</button><br><br>
+            <button class="cool_button" onclick="change_div('options_box','gameBox')">Multiplayer</button><br><br>
+            <button class="cool_button" onclick="change_div('options_box','gameBox')">Settings</button><br><br>
+            <button class="cool_button" onclick="change_div('options_box','gameBox')">Help</button>
         </div>
     </div>
 </body>
