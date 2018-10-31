@@ -48,7 +48,7 @@ p {
     transition: .5s ease;
     opacity: 0;
     color: #E9E9E9;
-    background-color: none;
+    /*background-color: none;*/
     padding: 20px;
     font-size: 40px;
     position: absolute;
@@ -124,7 +124,7 @@ p {
 }
 
 .studentButton:hover {
-    background-color: #E9E9E9;
+    /* background-color: #E9E9E9; */
     border: 2px solid #E9E9E9;
     color: #032E37;
 }

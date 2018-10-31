@@ -94,7 +94,7 @@ html, body {
 
 .submitButton:hover {
     background-color: #B6C8A9;
-    border: 2px solid #B6C8A9;
+    /* border: 2px solid #B6C8A9; */
     color: #032E37;
 }
 
