@@ -124,8 +124,8 @@ p {
 }
 
 .studentButton:hover {
-    /* background-color: #E9E9E9; */
-    border: 2px solid #E9E9E9;
+    background-color: #E9E9E9;
+    /*border: 2px solid #E9E9E9;*/
     color: #032E37;
 }
 
