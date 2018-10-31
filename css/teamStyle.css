@@ -133,6 +133,30 @@ p {
     outline: none;
 }
 
+@media screen and (max-width: 1260px) {   
+    .sectionDevs {
+        grid-template-rows: 33.3% 33.3% 33.%;
+        grid-template-columns: 100%;
+        grid-gap: 3%;
+    }
+    
+    .footer {
+        margin-top: 7%;
+    }
+}
+
+/*.containerMihnea {
+    grid-area: mih;
+}
+
+.containerAndra {
+    grid-area: and;
+}
+
+.containerVlad {
+    grid-area: vld;
+}*/
+
 /*@media screen and (max-width: 500px) {
     br {
         display: none;
