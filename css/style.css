@@ -7,29 +7,37 @@ body {
     position: fixed;
     width: 100%;
     background-color: white;
+    /*height: 12%;;*/
     left: 0;
     right: 0;
     top: 0;
     z-index: 1;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
 .navBar .logo {
     width: 15%;
     vertical-align: middle;
     padding: 5px;
+    padding-left: 0.5%;
+    /*float: left;*/
 }
 
 .navBar a {
     border-color: #214C89;
     border-radius: 80px;
     border-style: solid;
-    padding: 10px;
+    padding: 0.5%;
     padding-left: 30px;
     padding-right: 30px;
     margin-left: 15px;
     color: #214C89;
     text-decoration: none;
     transition: all 0.3s ease 0s;
+    /*float: left;*/
+    font-size: 100%;
+    /*margin-top: 35px;*/
 }
 
 .navBar a:hover {
@@ -43,8 +51,8 @@ body {
 }
 
 .mainContent {
-    position: absolute;
-    margin-top: 8%;
+    /*position: absolute;*/
+    /*margin-top: 11%;*/
 }
 
 .pacman {
@@ -62,14 +70,14 @@ body {
 
 .welcome {
     text-align: center;
-    font-size: 30pt;
+    font-size: 2vw;
     font-family: 'Hack';
     color: #D9D9D9;
 }
 
 .helpText {
     text-align: center;
-    font-size: 16pt;
+    font-size: 1.5vw;
     font-family: 'Hack';
     color: #D9D9D9;
 }
