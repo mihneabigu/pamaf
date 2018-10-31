@@ -18,6 +18,7 @@
     max-width: 50%;
     padding-left: 25%;
     font-family: 'Hack', serif;
+    
 }
 
 .scoreboard table {
@@ -66,9 +67,4 @@
 p {
     margin: 0;
     padding: 0;
-}
-
-.scoreboard table {
-    margin-left:auto; 
-    margin-right:auto;     
 }
