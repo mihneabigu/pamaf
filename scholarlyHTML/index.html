@@ -47,6 +47,16 @@
                     Client-side data storage
                 </a>
             </li>
+            <li property="itemListElement" typeof="ListItem">
+                <a href="#controls">
+                    We care about controls
+                </a>
+            </li>
+            <li property="itemListElement" typeof="ListItem">
+                    <a href="#conclusion">
+                        Conclusion
+                    </a>
+            </li>
         </ol>
         <dl>
             <dt>Authors:</dt>
@@ -182,6 +192,19 @@
                         Instagram API for developers - <a href="https://www.instagram.com/developer/authentication/">Here</a>
                     </li>
                 </ul>
+                In the next segment, we will talk about how we are going to use the Facebook API in order to authenticate into our website using your Facebook profile. <br><br>
+                The Facebook SDK for JavaScript doesn't have any standalone files that need to be downloaded or installed, instead you simply need to include a short piece of regular JavaScript in your HTML that will asynchronously load the SDK into your pages. The async load means that it does not block loading other elements of your page.
+                The following snippet of code will give the basic version of the SDK where the options are set to their most common defaults. You should insert it directly after the opening "body" tag on each page you want to load it:
+                <br>
+                <figure typeof="sa:Image">
+                    <img class="imagine" src="fbCode.png">
+                </figure><br>
+                This code will load and initialize the SDK. You must replace the value in your-app-id with the ID of your own Facebook App. You can find this ID using the App Dashboard.
+                <br>
+                Next, we would like our users to be able to login/register using Facebook login (another developer tool). To do that, we simply run the following code: <br>
+                <figure typeof="sa:Image">
+                    <img class="imagine" src="fbCode_2.png">
+                </figure><br>
             </p>
         </blockquote>
     </section>
@@ -196,6 +219,38 @@
             </p>
         </blockquote>
     </section>
+    <section id="controls" role="doc-chapter" property="about">
+        <h2>
+            <span>7. </span>We care about controls
+        </h2>
+        <blockquote>
+            <p>
+                While we may build an excellent platform for our users to interact with, we can't neglect our userbase that would like to try our application on Mobile Platforms. <br>
+                Thus, we tought about implementing specific keys located at the bottom of the page for the user to be able to move his character around using his Mobile Phone or even Tablet. <br>
+                But we felt that this would only hinder the experience, so our solution will be by swiping on the screen in the direction you would like your character to move. <br>
+                To achieve this, we will use this JavaScript function: <br>
+                <figure typeof="sa:Image">
+                        <img class="imagine" src="jsSwipe.png">
+                </figure><br>
+                And to use it, we simply add this following piece of code in our application: <br>
+                <figure typeof="sa:Image">
+                        <img class="imagine" src="swipeUse.png">
+                </figure><br>
+            </p>
+        </blockquote>
+    </section>
+    <section id="conclusion" role="doc-chapter" property="about">
+            <h2>
+                <span>8. </span>Conclusion
+            </h2>
+            <blockquote>
+                <p>
+                    In conclusion, we hope to be able to deliver a top-notch product that will assemble a fun way in which people can experience the legendary Pac-Man game with an added twist. <br>
+                    We thank you for reading this Scholarly Article and we'll see you soon! <br>
+                    Cheers!
+                </p>
+            </blockquote>
+        </section>
 </body>
 
 </html>
