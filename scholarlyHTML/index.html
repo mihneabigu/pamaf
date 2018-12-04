@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ro-RO" vocab="http://schema.org/" typeof="schema:ScholarlyArticle" property="https://github.com/mihneabigu/pamaf">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Application Progress</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>body{margin-right:7%; margin-left: 7%; font-size:120%;}</style>
+</head>
+
+<body prefix="schema: http://schema.org">
+    <header>
+        <h1 property="http://purl.org/dc/terms/title">Pamaf - Application Progress</h1>
+    </header>
+    <div role="contentinfo">
+        <h3>Cuprins:</h3>
+        <ol role="directory">
+            <li property="itemListElement" typeof="ListItem">
+                <a href="#abstract">
+                    Abstract
+                </a>
+            </li>
+            <li property="itemListElement" typeof="ListItem">
+                <a href="#introduction">
+                    Introduction
+                </a>
+            </li>
+            <li property="itemListElement" typeof="ListItem">
+                <a href="#summary">
+                    Summary
+                </a>
+            </li>
+            <li property="itemListElement" typeof="ListItem">
+                <a href="#wip">
+                    Intermediate stages
+                </a>
+            </li>
+            <li property="itemListElement" typeof="ListItem">
+                <a href="#dataDealing">
+                    Local/external data usage
+                </a>
+            </li>
+            <li property="itemListElement" typeof="ListItem">
+                <a href="#clientStorage">
+                    Client-side data storage
+                </a>
+            </li>
+        </ol>
+        <dl>
+            <dt>Authors:</dt>
+            <dd property="http://purl.org/dc/terms/creator">
+                <a typeof="sa:ContributorRole" property="url" href="https://github.com/mihneabigu">
+                    <span property="familyName">Bigu</span> <span property="givenName">Mihnea</span>
+                </a>& 
+                <a typeof="sa:ContributorRole" property="url" href="https://github.com/NinjaSaph">
+                    <span property="familyName">Oica</span> <span property="givenName">Andra-Maria</span>
+                </a>& 
+                <a typeof="sa:ContributorRole" property="url" href="https://github.com/BlayneStorm">
+                    <span property="familyName">Romila</span> <span property="givenName">Vlad</span>
+                </a>
+            </dd>
+            <br>
+            <dt>Project source code:</dt>
+            <dd>
+                <a property="url" href="https://github.com/mihneabigu/pamaf">GitHub</a>
+            </dd>
+            <br>
+            <dt>Tags:</dt>
+            <dd>
+                <span>info, project, infoiasi, cliw, web, pamaf</span>
+            </dd>
+        </dl>
+    </div>
+    <section id="abstract" typeof="sa:Results" role="doc-introduction" property="about">
+        <h2>
+            <span>1. </span>Abstract
+        </h2>
+        <blockquote>
+            <p>
+                Pamaf is a student project in which the player fights the other teachers in a Pac-man style. This document
+                describes the main ideas/concepts, as well as the User Experience and the way in which the authors
+                collaborated.
+            </p>
+        </blockquote>
+    </section>
+    <section id="introduction" role="doc-introduction" property="about">
+        <h2>
+            <span>2. </span>Introduction
+        </h2>
+        <blockquote>
+            <p>
+                Games have always been a way in which people had fun. Originating with Pac-man, Pamaf wants to achieve the
+                same greatness by adding a twist to the game: phantoms become teachers and our yellow little friend is
+                represented by our profile picture. This way, students are able to face one of their biggest nightmares in
+                a fun and addicting way.
+            </p>
+        </blockquote>
+    </section>
+    <section id="summary" role="doc-introduction" property="about">
+        <h2>
+            <span>3. </span>Summary
+        </h2>
+        <blockquote>
+            <p>
+                We have started from the idea that we would like a simple interface in which the main point is for the
+                players to get to the game as fast as possible. We did respect that, but we have also added a few other
+                pages, like the History, Rules or Scoreboard. There is also a Contact page if you ever feel the need to
+                reach us.
+                There have been ups and downs and a lot of changes during the first phases of development, but overall we
+                think that we've done a good job on having a layout that is fast, good on the eye and also easy to
+                understand and easy to navigate.<br>
+            </p>
+        </blockquote>
+    </section>
+    <section id="wip" role="doc-chapter" property="about">
+        <h2>
+            <span>4. </span>Intermediate stages
+        </h2>
+        <blockquote>
+            <p>
+            <link property="itemListUnorder" href="https://schema.org/ItemListUnordered"/>
+            <ul role="directory">
+                <li property="itemListElement" typeof="ListItem">
+                    Connected account to external APIs (Facebook, Instagram, Github) to enable calls on them for our website clients to connect via Facebook, Instagram or Github.
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                    Implementation of login functionality through external APIs.
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                    Game addition and its features (levels, scores, collected data, wins, defeats…)
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                    Feature of multiplayer game being started in a way inspired from <a href="https://jackboxgames.com">JackBoxGames</a>
+                    where a new game room generates an unique token which is latar being used by others to access the room.
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                    In our game, players can access a game room with a key, whether it's generated by another player or generated 
+                    by the player himself. Game style is each player plays a match separately whenever he wants. 
+                    This was inspired by other apps such as DrawMyThing where a game is represented by a cycle of draw-and-guess 
+                    between players that have chosen to play together (they can hold many games  “open” at the same time)
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                    Implementation of game functionalities: start game, create room, enter room.
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                    Implementation of game options functionalities: mute / unmute sound, change language.
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                    Implementation of data extraction from database for scoreboard and profile sections.
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                    Connection to a database in order to store our clients data and statistics.
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                    Feature added of data being collected via database calls and updates. Data is being updated for singleplayer 
+                    mode as one user can log on later for a further progress of the game. Data is also updated for multiplayer games, 
+                    all users being remembered for their best score on the scoreboard page. (+ wins/defeats, etc)
+                </li>
+            </ul>
+            </p>
+        </blockquote>
+    </section>
+    <section id="dataDealing" role="doc-chapter" property="about">
+        <h2>
+            <span>5. </span>Local/external data usage (Data modelling)
+        </h2>
+        <blockquote>
+            <p>
+                Client data is stored on a database accessed in a easy manner by us developers on our back-end  module (php based server-side).
+	            As a consequence of using an external website for our users to log on our application, we have to execute calls on external APIs, such as:
+                <link property="itemListUnorder" href="https://schema.org/ItemListUnordered"/>
+                <ul role="directory">
+                    <li property="itemListElement" typeof="ListItem">
+                        Facebook API for developers - <a href="https://developers.facebook.com/">Here</a>
+                    </li>
+                    <li property="itemListElement" typeof="ListItem">
+                        Github API for developers - <a href="https://developer.github.com/v3/guides/basics-of-authentication/">Here</a>
+                    </li>
+                    <li property="itemListElement" typeof="ListItem">
+                        Instagram API for developers - <a href="https://www.instagram.com/developer/authentication/">Here</a>
+                    </li>
+                </ul>
+            </p>
+        </blockquote>
+    </section>
+    <section id="clientStorage" role="doc-chapter" property="about">
+        <h2>
+            <span>6. </span>Client-side data storage
+        </h2>
+        <blockquote>
+            <p>
+                The concept of client-side storage has been around for a long time. Since the early days of the web, sites have used cookies to store information to personalize user experience on websites. They're the earliest form of client-side storage commonly used on the web.
+                Because of that age, there are a number of problems — both technical and user experience-wise — afflicting cookies. These problems are significant enough that upon visiting a site for the first time, people living in Europe are shown messages informing them if they will use cookies to store data about them. This is due to a piece of European Union legislation known as the EU Cookie directive. Nowadays, WebStorage and IndexedDB is the way to go. The Web Storage API provides a very simple syntax for storing and retrieving smaller, data items consisting of a name and a corresponding value. This is useful when you just need to store some simple data, like the user's name, whether they are logged in, what color to use for the background of the screen, etc. The IndexedDB API provides the browser with a complete database system for storing complex data. This can be used for things from complete sets of customer records to even complex data types like audio or video files. While there is the Cache API that promises way better techniques of storing information on the client-side, it is not yet supported by many browsers and such, we will be using WebStorage and IndexedDB.
+            </p>
+        </blockquote>
+    </section>
+</body>
+
+</html>
