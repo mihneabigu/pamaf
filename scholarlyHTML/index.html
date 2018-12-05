@@ -219,9 +219,60 @@
             </p>
         </blockquote>
     </section>
+    <section id="technology" role="doc-chapter" property="about">
+        <h2>
+            <span>7. </span>Technologies and services used
+        </h2>
+        <blockquote>
+            <p>
+                First and foremost, in order to deliver a modern web application, we used the three main components that are present almost everywhere and these are: <br>
+                <figure typeof="sa:Image" style="display:inline-block; margin-top: -5px;">
+                    <img class="imagine" src="assets/html.png" style="height: 100px; width: auto;">
+                    <img class="imagine" src="assets/css.png" style="height: 100px; width: auto;">
+                    <img class="imagine" src="assets/es6.svg" style="height: 100px; width: auto; margin-left: 13px;">
+                </figure><br>
+                So, while the Front-End part was an easy task in choosing the correct technologies, for the Back-End and thus Database segment, there are many choices out there, each with a different purpose. <br>
+                Considering this, we have taken the decision to use NodeJS server, backed up by a MongoDB Database: <br>
+                <figure typeof="sa:Image" style="display:inline-block;">
+                    <img class="imagine" src="assets/nodejs.png" style="height: 100px; width: auto;">
+                    <img class="imagine" src="assets/mongo.png" style="height: 120px; width: auto; ">
+                </figure><br>
+                The reasoning for choosing this pair of Server-Database is quite simple and it is mainly thanks to MongoDB: <br>
+                <ul role="directory">
+                    <li property="itemListElement" typeof="ListItem">
+                        It is a Database service based on NoSQL, which is fast and flexible
+                    </li>
+                    <li property="itemListElement" typeof="ListItem">
+                        The performance of the service will automatically scale with the growth of the application. Unlike MySQL, where a table can degrade if it goes over 10GB, MongoDB does not suffer from this
+                    </li>
+                    <li property="itemListElement" typeof="ListItem">
+                        Data is stored in flexible, JSON-like documents that can have varied structures
+                    </li>
+                    <li property="itemListElement" typeof="ListItem">
+                        In MongoDB, documents are able to have their own unique structure
+                    </li>
+                    <li property="itemListElement" typeof="ListItem">
+                        New fields can be added at any time and contain any type of value. 
+                        This type of functionality would require a relational database to be restructured
+                    </li>
+                    <li property="itemListElement" typeof="ListItem">
+                        MongoDB is schema-free, allowing you to create documents without having to define the structure of the document first
+                    </li>
+                    <li property="itemListElement" typeof="ListItem">
+                        Easy to integrate and it does not require a DBA (Database Administrator)
+                    </li>
+                </ul> <br>
+                Also, we are thinking about an alternate solution regarding the Login/Register action performed by the User. <br>
+                Thus, an OAuth2.0 method is favoured and could be easily integrated using the following schema: <br>
+                <figure typeof="sa:Image" style="display:inline-block;">
+                    <img class="imagine" src="assets/oauth.png" style="height: 75%; width: auto;">    
+                </figure><br>
+            </p>
+        </blockquote>
+    </section>
     <section id="controls" role="doc-chapter" property="about">
         <h2>
-            <span>7. </span>We care about controls
+            <span>8. </span>We care about controls
         </h2>
         <blockquote>
             <p>
@@ -241,7 +292,7 @@
     </section>
     <section id="conclusion" role="doc-chapter" property="about">
             <h2>
-                <span>8. </span>Conclusion
+                <span>9. </span>Conclusion
             </h2>
             <blockquote>
                 <p>
@@ -250,7 +301,7 @@
                     Cheers!
                 </p>
             </blockquote>
-        </section>
+    </section>
 </body>
 
 </html>
