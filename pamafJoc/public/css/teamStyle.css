@@ -1,0 +1,167 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.logoDevs {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    /*border: 1px solid red;*/
+}
+
+.textDevsPage {
+    font-size: 35px;
+    text-align: center;
+}
+
+.sectionDevs {
+    /*border: 3px solid red;*/
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    text-align: center; /* daca il scot se face shrink la intregul element doar pe content*/
+    background-color: inherit;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.student {
+    /*border: 1px solid black;*/
+    position: relative;
+}
+
+.student .Mihnea {
+    width: 325px;
+    height: 300px;
+    border-radius: 50px;
+    border: 5px solid #E9E9E9;
+    max-width: 100%;
+    
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.student .middle {
+    transition: .5s ease;
+    opacity: 0;
+    color: #E9E9E9;
+    /*background-color: none;*/
+    padding: 20px;
+    font-size: 40px;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+    /*border: 2px solid red;*/
+}
+
+.student:hover .Mihnea{
+    opacity: 0.3;
+}
+
+.student:hover .Andra{
+    opacity: 0.3;
+}
+
+.student:hover .Vlad{
+    opacity: 0.3;
+}
+
+.student:hover .middle {
+    opacity: 1;
+}
+
+
+
+.student .Andra {
+    width: 325px;
+    height: 300px;
+    border-radius: 50px;
+    border: 5px solid #E9E9E9;
+    max-width: 100%;
+}
+
+.student .Vlad {
+    width: 325px;
+    height: 300px;
+    border-radius: 50px;
+    border: 5px solid #E9E9E9;
+    max-width: 100%;
+}
+
+.studentName {
+    font-size: 35px;
+    font-family: serif;
+    color: #E9E9E9;
+}
+
+.studentJob {
+    font-size: 20px;
+    color: #E9E9E9;
+    
+}
+
+.studentLike {
+    font-size: 25px;
+    color: #E9E9E9;
+}
+
+.studentButton {
+    background-color: inherit;
+    border: 2px solid #E9E9E9;
+    color: #E9E9E9;
+    padding: 10px 35px;
+    font-size: 20px;
+    font-family: serif;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.studentButton:hover {
+    background-color: #E9E9E9;
+    /*border: 2px solid #E9E9E9;*/
+    color: #032E37;
+}
+
+.studentButton:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 1260px) {   
+    .sectionDevs {
+        grid-template-rows: 33.3% 33.3% 33.%;
+        grid-template-columns: 100%;
+        grid-gap: 3%;
+    }
+    
+    .footer {
+        margin-top: 7%;
+    }
+}
+
+/*.containerMihnea {
+    grid-area: mih;
+}
+
+.containerAndra {
+    grid-area: and;
+}
+
+.containerVlad {
+    grid-area: vld;
+}*/
+
+/*@media screen and (max-width: 500px) {
+    br {
+        display: none;
+    }
+    .logoDevs {
+        margin-top: 25%;
+    }
+}*/

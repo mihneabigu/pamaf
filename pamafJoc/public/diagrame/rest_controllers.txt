@@ -1,0 +1,15 @@
+	REST + CONTROLLERS
+
+	Paradigma REST presupune separarea serverului de client la nivel de implementare; clientul nu stie de server si viceversa; aceste doua entitati stiu doar formatul de mesaj pe care trebuie sa-l trimita/receptioneze. 
+	Aceasta modularizare ajuta la modificarea eficienta a codului (doar client-side sau server-side, nu e nevoie sa modificam si cealalta entitate) si gestionarea facila a aplicatiei web
+
+	In functie de activitatea clientului de pe aplicatia web, la un simplu request, acesta va fi redirectionat spre un controller central care va reprezenta de fapt un handler pentru o astfel de cerere.
+		ex: host.net/play/login, host.net/game
+	
+    Astfel, pentru fiecare tip de request, controllerul va avea un tratament specific:
+    Totodata, pentru fiecare sesiune a aplicatiei (un user conectat la aplicatie) va exista o instanta a acestui tip de controller. La nivel request type, acestea se vor imparti in doua categorii: publice si private.
+    Cele publice (login, register) nu necesita ca utilizatorul sa fie conectat, in timp ce cele private (game) necesita conectarea unui utilizator la aplicatie.
+
+	Ex:
+		1) Clientul X se logheaza -> intervine controllerul pentru login si initializeaza variabila User la nivel de JS cu datele acestuia -> este returnata pagina meniului principal al jocului cu canvasul, dupa autentificare, pentru userul X
+		2) Daca clientul nu este autentificat si incearca sa faca un request la adresa host.net/game, acesta va fi intampinat cu o pagina de eroare - pentru acest lucru ne vom folosi de variabilele globale, prin setarea sesiunii atunci cand userul se logheaza cu succes

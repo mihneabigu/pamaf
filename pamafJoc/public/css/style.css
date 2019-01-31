@@ -1,0 +1,145 @@
+body {
+    background-color: #032E37;
+    margin:0px; /*adaugat pt partea 3*/
+	padding:0px; /*adaugat pt partea 3*/
+}
+
+.navBar {
+    font-family: 'Hack';
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    /*height: 12%;;*/
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.navBar .logo {
+    width: 15%;
+    vertical-align: middle;
+    padding: 5px;
+    padding-left: 0.5%;
+    /*float: left;*/
+}
+
+.navBar a {
+    border-color: #214C89;
+    border-radius: 80px;
+    border-style: solid;
+    padding: 0.5%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 15px;
+    color: #214C89;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    /*float: left;*/
+    font-size: 100%;
+    /*margin-top: 35px;*/
+}
+
+.navBar a:hover {
+    background-color: #214C89;
+    color: white;
+}
+
+.navBar a.active {
+    background-color: #214C89;
+    color: white;    
+}
+
+.navBar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .navBar a:not(:first-child) {display: none;}
+  .navBar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navBar.responsive {position: relative;}
+  .navBar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.mainContent {
+    /*position: absolute;*/
+    /*margin-top: 11%;*/
+}
+
+.pacman {
+    display: inline-block;
+    text-align: center;
+}
+
+.pacmanImages {
+    width: 10%;
+}
+
+.fantoma {
+    width: 7%;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Hack';
+    color: #D9D9D9;
+}
+
+.helpText {
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'Hack';
+    color: #D9D9D9;
+}
+
+.playButton {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.playImage {
+    width: 20%;
+    transition: opacity 0.3s ease 0s;
+}
+
+.playImage:hover {
+    opacity: 0.8;
+}
+
+.footer {
+    border-top: 1px solid #E9E9E9;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    align-items: center;
+    text-align: center; /*sau justify-items: center doar*/
+    width: 90%;
+    margin-left: 5%;
+    background-color: inherit;
+    /*transform: translate(0%, 530%);*/
+}
+
+.ftr {
+    /*border: 1px solid red;*/
+    font-size: 18px;
+    color: #E9E9E9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

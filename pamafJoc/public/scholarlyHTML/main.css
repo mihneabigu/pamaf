@@ -1,0 +1,17 @@
+@font-face {
+    font-family: blenderpro;
+    src: url("blenderpro-medium-webfont.woff");
+}
+
+body {
+    font-family: blenderpro;
+}
+
+a {
+    text-decoration: none;
+    color: #007DCC;
+}
+
+h1, p, li {
+    color: #042A2B;
+}

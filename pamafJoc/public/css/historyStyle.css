@@ -1,0 +1,409 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.logoHistory {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    /*border: 1px solid red;*/
+}
+
+.logoQuote {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;    
+    /*border: 1px solid red;*/
+}
+
+/*.section1 {
+    border: 3px solid red;
+    background-color: #E9E9E9;
+}
+
+.text0 {
+    color: #032E37;
+    text-align: right;
+    font-size: 30px;
+    font-family: serif;
+    margin-left: 3%;
+    margin-right: 24%;
+    border:1px solid yellow;
+}
+
+.text1 {
+    border: 1px solid red;
+    color: #032E37;
+    background-color:green;
+    text-align: justify;
+    font-size: 20px;
+    font-family: serif;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.gif1 {
+    float: left;
+    clear: left;
+    border: 2px solid black;
+    margin-left: 18%;
+    margin-right: 12%;
+    border-radius: 30px;
+}*/
+
+.section11 {
+    /*border: 3px solid red;*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    background-color: #E9E9E9;
+}
+
+.text01 {
+    color: #032E37;
+    text-align: center;
+    font-size: 30px;
+    font-family: serif;
+    margin-left: 13%;
+    margin-right: 22%;
+    /*border: 2px solid red;*/
+}
+
+.text11 {
+    /*border: 2px solid red;*/
+    color: #032E37;
+    text-align: justify;
+    font-size: 20px;
+    font-family: serif;
+    margin-left: 13%;
+    margin-right: 22%;
+}
+
+.gif11 {
+    /*border: 2px solid black;*/
+    border-radius: 30px;
+    margin-left: 37%;
+    max-width: 50%;
+}
+
+.section2 {
+    /*border: 5px solid black;*/
+    display: grid;
+    grid-gap: 11%;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+}
+
+.logoPuckman {
+    width: 50%;
+    /*border: 2px solid red;*/
+}
+
+.text2 {
+    /*border: 2px solid red;*/
+    color: #E9E9E9;
+    text-align: center;
+    font-size: 30px;
+    font-family: serif;
+    margin-left: 23%;
+    margin-right: 7%;
+}
+
+.text3 {
+    /*border: 2px solid red;*/
+    color: #E9E9E9;
+    text-align: justify;
+    font-size: 20px;
+    font-family: serif;
+    margin-left: 23%;
+    margin-right: 7%;
+}
+
+.section3 {
+    /*border: 5px solid black;*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    background-color: #E9E9E9;
+
+}
+
+.logoName {
+    width: 70%;
+    /*border: 2px solid red;*/
+    margin-left: 22%;
+}
+
+.text4 {
+    /*border: 2px solid red;*/
+    color: #032E37;
+    text-align: center;
+    font-size: 30px;
+    font-family: serif;
+    margin-right: 21%;
+    margin-left: 15%;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltiptextBlinky {
+    font-size: 20px;
+    background-color: #E9E9E9;
+    color: #032E37;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 25px;
+    position: absolute;
+    z-index: 1;
+    bottom: 108%;
+    left: 4%;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.tooltiptextInky {
+    font-size: 20px;
+    background-color: #E9E9E9;
+    color: #032E37;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 25px;
+    position: absolute;
+    z-index: 1;
+    bottom: 108%;
+    left: 10%;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.tooltiptextClyde {
+    font-size: 20px;
+    background-color: #E9E9E9;
+    color: #032E37;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 25px;
+    position: absolute;
+    z-index: 1;
+    bottom: 108%;
+    left: 6%;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.tooltiptextPinky {
+    font-size: 20px;
+    background-color: #E9E9E9;
+    color: #032E37;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 25px;
+    position: absolute;
+    z-index: 1;
+    bottom: 108%;
+    left: 6%;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.tooltip .tooltiptextBlinky::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #E9E9E9 transparent transparent transparent;
+}
+
+.tooltip .tooltiptextInky::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #E9E9E9 transparent transparent transparent;
+}
+
+.tooltip .tooltiptextClyde::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #E9E9E9 transparent transparent transparent;
+}
+
+.tooltip .tooltiptextPinky::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #E9E9E9 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptextBlinky {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip:hover .tooltiptextInky {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip:hover .tooltiptextClyde {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip:hover .tooltiptextPinky {
+    visibility: visible;
+    opacity: 1;
+}
+
+.text5 {
+    /*border: 2px solid red;*/
+    color: #032E37;
+    text-align: justify;
+    font-size: 20px;
+    font-family: serif;
+    margin-right: 21%;
+    margin-left: 15%;
+}
+
+.section4 {
+    /*border: 5px solid black;*/
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 170px auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    justify-items: center;
+    /*align-items: center;*/
+}
+
+.text6 {
+    /*border: 2px solid red;*/
+    color: #E9E9E9;
+    text-align: center;
+    font-size: 70px;
+    font-family: serif;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.logoGhost {
+    /*border: 1px solid yellow;*/
+}
+
+.ghostDescription {
+    /*border: 2px solid red;*/
+    color: #E9E9E9;
+    text-align: center;
+    font-size: 20px;
+    font-family: serif;
+    /*margin-left: 20%;
+    margin-right: 20%;*/
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+@media screen and (max-width: 1000px) {   
+    .section4 {
+        grid-template-columns: auto auto;
+        grid-template-rows: 170px auto auto auto auto;
+    }
+
+    .text6 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .gd1 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .gd2 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+}
+
+.footer {
+    border-top: 1px solid #E9E9E9;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    align-items: center;
+    text-align: center; /*sau justify-items: center doar*/
+    width: 90%;
+    margin-left: 5%;
+    background-color: inherit;
+}
+
+.ftr {
+    /*border: 1px solid red;*/
+    font-size: 18px;
+    color: #E9E9E9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tilt {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.tilt:hover {
+  -webkit-transform: rotate(-5deg);
+     -moz-transform: rotate(-5deg);
+       -o-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+.morph {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.morph:hover {
+  border-radius: 45%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
