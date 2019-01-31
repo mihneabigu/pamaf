@@ -1,0 +1,173 @@
+body {
+    background-color: #032E37;
+    background-image: url("../img/bg2blur.jpg");
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+input[type="text"] {
+    height: 25px;
+    width: 40%;
+    font-size: 25px;
+    border-width: 3px;
+    border-style: solid;
+}
+#gameBox {
+    background: rgba(255,255,255,.5);
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5%;
+    margin: 8% auto;
+    padding: 10px;
+    height: 550px;
+    width: 900px;
+    text-align: center;
+    display: none;
+}
+#gameBox .map {
+    width:90%;
+    margin-top: 1%;
+    border-radius: 5%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+}
+.back_img_map {
+    width: 5%;
+    float: left;
+}
+.back_img_map:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.smol_box {
+  position: relative;
+  background: rgba(255,255,255,.9);
+  max-width: 360px;
+  margin: 0 auto 100px;
+  margin-top: 15%;
+  padding: 45px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 15%;
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+}
+#login_box {
+    max-width: 15%;
+    display: block;
+}
+#login_box > img {
+    width: 50%;
+    margin-top: -20%;
+    margin-bottom: -20%;
+}
+span .login {
+    display: inline;
+}
+.login img {
+    max-width: 30px;
+}
+#options_box {
+    display: none;
+    max-width: 13%;
+    text-align: center;
+}
+#options_box img {
+    width: 30%;
+}
+#options_box .cool_button:hover::before {
+    content: '▶ ';
+}
+.cool_button {
+    font-family: sans-serif;
+    font-size: 12pt;
+    border-width: 3px;
+    border-radius: 80px;
+    border-style: solid;
+    border-color: #214C89;
+    padding: 10px;
+    transition: all 0.3s ease 0s;
+}
+.cool_button:hover {
+    background-color: #214C89;
+    color: white;
+    cursor: pointer;
+}
+#settings_box {
+    text-align: left;
+    max-width: 20%;
+    display: none;
+}
+.settings_img {
+    width: 20%;
+    margin-left: 18%;
+}
+.language {
+    display: inline;
+}
+#help_box {
+    text-align: left;
+    max-width: 20%;
+    text-align: justify;
+    display: none;
+}
+.back_img {
+    width: 20%;
+}
+.back_img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.help_img {
+    width: 25%;
+    margin-left: 16%;
+}
+#multiplayer_rooms {
+    max-width: 23%;
+    text-align: center;
+    display: none;
+}
+#multiplayer_rooms .back_img {
+    float: left;
+    margin-top: -10%;
+    margin-left: -7px;
+}
+.room_img {
+    width: 15%;
+    margin-top: -6%;
+    margin-left: -17%;
+}
+#room_box {
+    max-width: 23%;
+    text-align: center;
+    display: none;
+}
+#room_box .back_img {
+    float: left;
+    margin-top: -6%;
+    margin-left: -7px;
+}
+#room_box ul {
+    text-align: left;
+}
+#user_profile {
+    text-align: center;
+    max-width: 15%;
+    display: none;
+}
+.user_pic {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    width: 50%;
+}
