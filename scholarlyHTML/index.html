@@ -4,16 +4,23 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Application Progress</title>
+    <title>Pamaf - Progress</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <style>body{margin-right:7%; margin-left: 7%; font-size:120%;}</style>
+    <style>
+        body {
+            margin-right: 7%;
+            margin-left: 7%;
+            font-size: 120%;
+        }
+    </style>
 </head>
 
 <body prefix="schema: http://schema.org">
     <header>
         <h1 property="http://purl.org/dc/terms/title">Pamaf - Application Progress</h1>
     </header>
+    <hr>
     <div role="contentinfo">
         <h3>Cuprins:</h3>
         <ol role="directory">
@@ -48,14 +55,24 @@
                 </a>
             </li>
             <li property="itemListElement" typeof="ListItem">
-                <a href="#controls">
-                    We care about controls
+                <a href="#game">
+                    Game info
                 </a>
             </li>
             <li property="itemListElement" typeof="ListItem">
-                    <a href="#conclusion">
-                        Conclusion
-                    </a>
+                <a href="#maps">
+                    Map generation
+                </a>
+            </li>
+            <li property="itemListElement" typeof="ListItem">
+                <a href="#guide">
+                    Learn more
+                </a>
+            </li>
+            <li property="itemListElement" typeof="ListItem">
+                <a href="#conclusion">
+                    Conclusion
+                </a>
             </li>
         </ol>
         <dl>
@@ -63,10 +80,10 @@
             <dd property="http://purl.org/dc/terms/creator">
                 <a typeof="sa:ContributorRole" property="url" href="https://github.com/mihneabigu">
                     <span property="familyName">Bigu</span> <span property="givenName">Mihnea</span>
-                </a>& 
+                </a>&
                 <a typeof="sa:ContributorRole" property="url" href="https://github.com/NinjaSaph">
                     <span property="familyName">Oica</span> <span property="givenName">Andra-Maria</span>
-                </a>& 
+                </a>&
                 <a typeof="sa:ContributorRole" property="url" href="https://github.com/BlayneStorm">
                     <span property="familyName">Romila</span> <span property="givenName">Vlad</span>
                 </a>
@@ -83,13 +100,15 @@
             </dd>
         </dl>
     </div>
+    <hr>
     <section id="abstract" typeof="sa:Results" role="doc-introduction" property="about">
         <h2>
             <span>1. </span>Abstract
         </h2>
         <blockquote>
             <p>
-                Pamaf is a student project in which the player fights the other teachers in a Pac-man style. This document
+                Pamaf is a student project in which the player fights the other teachers in a Pac-man style. This
+                document
                 describes the main ideas/concepts, as well as the User Experience and the way in which the authors
                 collaborated.
             </p>
@@ -101,9 +120,11 @@
         </h2>
         <blockquote>
             <p>
-                Games have always been a way in which people had fun. Originating with Pac-man, Pamaf wants to achieve the
+                Games have always been a way in which people had fun. Originating with Pac-man, Pamaf wants to achieve
+                the
                 same greatness by adding a twist to the game: phantoms become teachers and our yellow little friend is
-                represented by our profile picture. This way, students are able to face one of their biggest nightmares in
+                represented by our profile picture. This way, students are able to face one of their biggest nightmares
+                in
                 a fun and addicting way.
             </p>
         </blockquote>
@@ -116,9 +137,9 @@
             <p>
                 We have started from the idea that we would like a simple interface in which the main point is for the
                 players to get to the game as fast as possible. We did respect that, but we have also added a few other
-                pages, like the History, Rules or Scoreboard. There is also a Contact page if you ever feel the need to
-                reach us.
-                There have been ups and downs and a lot of changes during the first phases of development, but overall we
+                pages, like History and Rules. There is also a Contact page if you ever feel the need to reach us.
+                There have been ups and downs and a lot of changes during the first phases of development, but overall
+                we
                 think that we've done a good job on having a layout that is fast, good on the eye and also easy to
                 understand and easy to navigate.<br>
             </p>
@@ -130,45 +151,46 @@
         </h2>
         <blockquote>
             <p>
-            <link property="itemListUnorder" href="https://schema.org/ItemListUnordered"/>
-            <ul role="directory">
-                <li property="itemListElement" typeof="ListItem">
-                    Connected account to external APIs (Facebook, Instagram, Github) to enable calls on them for our website clients to connect via Facebook, Instagram or Github.
-                </li>
-                <li property="itemListElement" typeof="ListItem">
-                    Implementation of login functionality through external APIs.
-                </li>
-                <li property="itemListElement" typeof="ListItem">
-                    Game addition and its features (levels, scores, collected data, wins, defeats…)
-                </li>
-                <li property="itemListElement" typeof="ListItem">
-                    Feature of multiplayer game being started in a way inspired from <a href="https://jackboxgames.com">JackBoxGames</a>
-                    where a new game room generates an unique token which is latar being used by others to access the room.
-                </li>
-                <li property="itemListElement" typeof="ListItem">
-                    In our game, players can access a game room with a key, whether it's generated by another player or generated 
-                    by the player himself. Game style is each player plays a match separately whenever he wants. 
-                    This was inspired by other apps such as DrawMyThing where a game is represented by a cycle of draw-and-guess 
-                    between players that have chosen to play together (they can hold many games  “open” at the same time)
-                </li>
-                <li property="itemListElement" typeof="ListItem">
-                    Implementation of game functionalities: start game, create room, enter room.
-                </li>
-                <li property="itemListElement" typeof="ListItem">
-                    Implementation of game options functionalities: mute / unmute sound, change language.
-                </li>
-                <li property="itemListElement" typeof="ListItem">
-                    Implementation of data extraction from database for scoreboard and profile sections.
-                </li>
-                <li property="itemListElement" typeof="ListItem">
-                    Connection to a database in order to store our clients data and statistics.
-                </li>
-                <li property="itemListElement" typeof="ListItem">
-                    Feature added of data being collected via database calls and updates. Data is being updated for singleplayer 
-                    mode as one user can log on later for a further progress of the game. Data is also updated for multiplayer games, 
-                    all users being remembered for their best score on the scoreboard page. (+ wins/defeats, etc)
-                </li>
-            </ul>
+                <link property="itemListUnorder" href="https://schema.org/ItemListUnordered" />
+                <ul role="directory">
+                    <li property="itemListElement" typeof="ListItem">
+                        Implementation is being done for login functionality through external APIs. (Facebook, Google,
+                        Github)
+                    </li>
+                    <hr>
+                    <li property="itemListElement" typeof="ListItem">
+                        Game is being added along with its features (maps, scores, lives, special points, ghosts,
+                        players...).
+                    </li>
+                    <hr>
+                    <li property="itemListElement" typeof="ListItem">
+                        Also, other functionalities related to the game are being added: start game, create game,
+                        singleplayer, multiplayer, mute / unmute sound...
+                    </li>
+                    <hr>
+                    <li property="itemListElement" typeof="ListItem">
+                        The multiplayer part of the game was inspired from <a href="https://jackboxgames.com">JackBoxGames</a>,
+                        where
+                        the creator of the game lobby generates a token that can be used by another player to connect
+                        to the same lobby.
+                    </li>
+                    <hr>
+                    <li property="itemListElement" typeof="ListItem">
+                        In our game, the main player (the creator of the game) plays the role of the main character
+                        from the original game, Pacman,
+                        while the other player plays the role of the ghost. Player ONE collects points and runs away
+                        from the ghost/player TWO and
+                        if the luck is in his favor, he might find a special dot/point that gives him the mighty power
+                        that enables him to eat player TWO.
+                        Player TWO follows player ONE as he can eat him, but he must run away when his opponent finds
+                        that special dot/point that makes
+                        him immortal for some seconds. One cannot simply stand the mighty power of the special dot.
+                    </li>
+                    <hr>
+                    <li property="itemListElement" typeof="ListItem">
+                        Connection to a database in order to store our client's data. (score)
+                    </li>
+                </ul>
             </p>
         </blockquote>
     </section>
@@ -178,9 +200,10 @@
         </h2>
         <blockquote>
             <p>
-                Client data is stored on a database accessed in a easy manner by us developers on our back-end  module (php based server-side).
-	            As a consequence of using an external website for our users to log on our application, we have to execute calls on external APIs, such as:
-                <link property="itemListUnorder" href="https://schema.org/ItemListUnordered"/>
+                Client data is stored on a database accessed in a easy manner by us developers on our back-end module.
+                As a consequence of using an external website for our users to log on our application, we have to
+                execute calls on external APIs, such as:
+                <link property="itemListUnorder" href="https://schema.org/ItemListUnordered" />
                 <ul role="directory">
                     <li property="itemListElement" typeof="ListItem">
                         Facebook API for developers - <a href="https://developers.facebook.com/">Here</a>
@@ -188,23 +211,38 @@
                     <li property="itemListElement" typeof="ListItem">
                         Github API for developers - <a href="https://developer.github.com/v3/guides/basics-of-authentication/">Here</a>
                     </li>
-                    <li property="itemListElement" typeof="ListItem">
-                        Instagram API for developers - <a href="https://www.instagram.com/developer/authentication/">Here</a>
-                    </li>
                 </ul>
-                In the next segment, we will talk about how we are going to use the Facebook API in order to authenticate into our website using your Facebook profile. <br><br>
-                The Facebook SDK for JavaScript doesn't have any standalone files that need to be downloaded or installed, instead you simply need to include a short piece of regular JavaScript in your HTML that will asynchronously load the SDK into your pages. The async load means that it does not block loading other elements of your page.
-                The following snippet of code will give the basic version of the SDK where the options are set to their most common defaults. You should insert it directly after the opening "body" tag on each page you want to load it:
+                In the next segment, we will talk about how we are going to use the Facebook API in order to
+                authenticate into our website using your Facebook profile. <br><br>
+                The Facebook SDK for JavaScript doesn't have any standalone files that need to be downloaded or
+                installed, instead you simply need to include a short piece of regular JavaScript in your HTML that
+                will asynchronously load the SDK into your pages. The async load means that it does not block loading
+                other elements of your page.
+                The following snippet of code will give the basic version of the SDK where the options are set to their
+                most common defaults. You should insert it directly after the opening "body" tag on each page you want
+                to load it:
                 <br>
                 <figure typeof="sa:Image">
                     <img class="imagine" src="fbCode.png">
                 </figure><br>
-                This code will load and initialize the SDK. You must replace the value in your-app-id with the ID of your own Facebook App. You can find this ID using the App Dashboard.
+                This code will load and initialize the SDK. You must replace the value in your-app-id with the ID of
+                your own Facebook App. You can find this ID using the App Dashboard.
                 <br>
-                Next, we would like our users to be able to login/register using Facebook login (another developer tool). To do that, we simply run the following code: <br>
+                Next, we would like our users to be able to login/register using Facebook login (another developer
+                tool). To do that, we simply run the following code: <br>
                 <figure typeof="sa:Image">
                     <img class="imagine" src="fbCode_2.png">
-                </figure><br>
+                </figure>
+                <b>Firebase API</b><br>
+                After all, we have used Firebase API to be able to authenticate using external platforms logins
+                (Facebook, Google, Github). <br>
+                An easy guide for doing so was already well written on Firebase's main website.
+                <link property="itemListUnorder" href="https://schema.org/ItemListUnordered" />
+                <ul role="directory">
+                    <li property="itemListElement" typeof="ListItem">
+                        Authenticate Using Facebook Login with JavaScript - <a href="https://firebase.google.com/docs/auth/web/facebook-login">Here</a>
+                    </li>
+                </ul>
             </p>
         </blockquote>
     </section>
@@ -214,93 +252,126 @@
         </h2>
         <blockquote>
             <p>
-                The concept of client-side storage has been around for a long time. Since the early days of the web, sites have used cookies to store information to personalize user experience on websites. They're the earliest form of client-side storage commonly used on the web.
-                Because of that age, there are a number of problems — both technical and user experience-wise — afflicting cookies. These problems are significant enough that upon visiting a site for the first time, people living in Europe are shown messages informing them if they will use cookies to store data about them. This is due to a piece of European Union legislation known as the EU Cookie directive. Nowadays, WebStorage and IndexedDB is the way to go. The Web Storage API provides a very simple syntax for storing and retrieving smaller, data items consisting of a name and a corresponding value. This is useful when you just need to store some simple data, like the user's name, whether they are logged in, what color to use for the background of the screen, etc. The IndexedDB API provides the browser with a complete database system for storing complex data. This can be used for things from complete sets of customer records to even complex data types like audio or video files. While there is the Cache API that promises way better techniques of storing information on the client-side, it is not yet supported by many browsers and such, we will be using WebStorage and IndexedDB.
+                The concept of client-side storage has been around for a long time. Since the early days of the web,
+                sites have used cookies to store information to personalize user experience on websites.
+                They're the earliest form of client-side storage commonly used on the web.
+                Because of that age, there are a number of problems — both technical and user experience-wise —
+                afflicting cookies.
+                These problems are significant enough that upon visiting a site for the first time, people living in
+                Europe are shown messages informing them if they will use cookies to store data about them.
+                This is due to a piece of European Union legislation known as the EU Cookie directive. Nowadays,
+                WebStorage and IndexedDB is the way to go.
+                The Web Storage API provides a very simple syntax for storing and retrieving smaller, data items
+                consisting of a name and a corresponding value.
+                This is useful when you just need to store some simple data, like the user's name, whether they are
+                logged in, what color to use for the background of the screen, etc.
+                The IndexedDB API provides the browser with a complete database system for storing complex data. This
+                can be used for things from complete sets of customer records to even complex data types like audio or
+                video files.
+                While there is the Cache API that promises way better techniques of storing information on the
+                client-side, it is not yet supported by many browsers and such, we will be using WebStorage and
+                IndexedDB.
             </p>
         </blockquote>
     </section>
-    <section id="technology" role="doc-chapter" property="about">
+    <section id="game" role="doc-chapter" property="about">
         <h2>
-            <span>7. </span>Technologies and services used
+            <span>7. </span>Game info
         </h2>
         <blockquote>
             <p>
-                First and foremost, in order to deliver a modern web application, we used the three main components that are present almost everywhere and these are: <br>
-                <figure typeof="sa:Image" style="display:inline-block; margin-top: -5px;">
-                    <img class="imagine" src="assets/html.png" style="height: 100px; width: auto;">
-                    <img class="imagine" src="assets/css.png" style="height: 100px; width: auto;">
-                    <img class="imagine" src="assets/es6.svg" style="height: 100px; width: auto; margin-left: 13px;">
-                </figure><br>
-                So, while the Front-End part was an easy task in choosing the correct technologies, for the Back-End and thus Database segment, there are many choices out there, each with a different purpose. <br>
-                Considering this, we have taken the decision to use NodeJS server, backed up by a MongoDB Database: <br>
-                <figure typeof="sa:Image" style="display:inline-block;">
-                    <img class="imagine" src="assets/nodejs.png" style="height: 100px; width: auto;">
-                    <img class="imagine" src="assets/mongo.png" style="height: 120px; width: auto; ">
-                </figure><br>
-                The reasoning for choosing this pair of Server-Database is quite simple and it is mainly thanks to MongoDB: <br>
-                <ul role="directory">
-                    <li property="itemListElement" typeof="ListItem">
-                        It is a Database service based on NoSQL, which is fast and flexible
-                    </li>
-                    <li property="itemListElement" typeof="ListItem">
-                        The performance of the service will automatically scale with the growth of the application. Unlike MySQL, where a table can degrade if it goes over 10GB, MongoDB does not suffer from this
-                    </li>
-                    <li property="itemListElement" typeof="ListItem">
-                        Data is stored in flexible, JSON-like documents that can have varied structures
-                    </li>
-                    <li property="itemListElement" typeof="ListItem">
-                        In MongoDB, documents are able to have their own unique structure
-                    </li>
-                    <li property="itemListElement" typeof="ListItem">
-                        New fields can be added at any time and contain any type of value. 
-                        This type of functionality would require a relational database to be restructured
-                    </li>
-                    <li property="itemListElement" typeof="ListItem">
-                        MongoDB is schema-free, allowing you to create documents without having to define the structure of the document first
-                    </li>
-                    <li property="itemListElement" typeof="ListItem">
-                        Easy to integrate and it does not require a DBA (Database Administrator)
-                    </li>
-                </ul> <br>
-                Also, we are thinking about an alternate solution regarding the Login/Register action performed by the User. <br>
-                Thus, an OAuth2.0 method is favoured and could be easily integrated using the following schema: <br>
-                <figure typeof="sa:Image" style="display:inline-block;">
-                    <img class="imagine" src="assets/oauth.png" style="height: 75%; width: auto;">    
-                </figure><br>
+                Related to our game mechanics, collisions have been implemented for all the characters. <br>
+                Using pure math and the matrix of the map itself, possible barriers have been calculated and therefore
+                successfully avoided. <br><br>
+                The players control their entity using their keyboard, while teacher bots are moving freely by
+                themselves
+                calculating random directions from possible ones. <br><br>
+                When the players grab the special dot/point, they become invincible and therefore they are able to eat
+                their
+                opponents.
+                <figure typeof="sa:Image">
+                    <img class="imagine" src="game5.png">
+                </figure>
             </p>
         </blockquote>
     </section>
-    <section id="controls" role="doc-chapter" property="about">
+    <section id="maps" role="doc-chapter" property="about">
         <h2>
-            <span>8. </span>We care about controls
+            <span>8. </span>Map generation
         </h2>
         <blockquote>
             <p>
-                While we may build an excellent platform for our users to interact with, we can't neglect our userbase that would like to try our application on Mobile Platforms. <br>
-                Thus, we tought about implementing specific keys located at the bottom of the page for the user to be able to move his character around using his Mobile Phone or even Tablet. <br>
-                But we felt that this would only hinder the experience, so our solution will be by swiping on the screen in the direction you would like your character to move. <br>
-                To achieve this, we will use this JavaScript function: <br>
+                As we like to bring diversity to the player's experience, we could not escape the need to generate
+                diverse and fun maps.
+                <br>
+                In the singleplayer mode, the player has the honour to take a walk in the classic UAIC University Corp
+                C hallways, in the Faculty of Computer Science.
+                <br><br>
+                These are the hallways maps. Each one represents a certain hallway in the building, such as floor 2 (as
+                Year 1), floor 3 (as Year 2)
+                and floor 7 (as Year 3).
+                <br>
                 <figure typeof="sa:Image">
-                        <img class="imagine" src="jsSwipe.png">
-                </figure><br>
-                And to use it, we simply add this following piece of code in our application: <br>
+                    <img class="imagine" src="years.png">
+                </figure>
+                <br><br>
+                Other maps are shown randomly when the player enters a room. What we know for sure about these maps is
+                that
+                they have no dead-ends, they are symmetrically generated for left and right sections, for each
+                different top, bottom, side
+                and center sections and that they have two exit portals connected to one another.
+                <br><br>
+                The generation of the maps begins with an empty matrix representing half of the final map in which we
+                start adding pairs of blocks
+                in four rounds: top section, bottom section, sides section and center section.
                 <figure typeof="sa:Image">
-                        <img class="imagine" src="swipeUse.png">
-                </figure><br>
+                    <img class="imagine" src="map1.png">
+                    <img class="imagine" src="map2.png">
+                    <img class="imagine" src="map3.png">
+                    <img class="imagine" src="map4.png">
+                    <img class="imagine" src="map5.png">
+                    <img class="imagine" src="map6.png">
+                    <img class="imagine" src="map7.png">
+                    <img class="imagine" src="map8.png">
+                </figure>
+                After we have chosen the blocks for each one of the sections, we can fill up the spaces and correct the
+                path flow were needed.
+                <br>
+                In the end, the half maps are stuck together symmetrically and extras, such as player, ghost, special
+                points and portals positions are being set on the matrix, all these making it possible for
+                the map to be used in further game functionalities. <br><br>
+                The maps have been <b>tested</b> constantly so that we got the assurance that the characters would walk
+                well
+                on the paths and points and other extras are set on the right positions.
+            </p>
+        </blockquote>
+    </section>
+    <section id="guide" role="doc-chapter" property="about">
+        <h2>
+            <span>9. </span>Learn more
+        </h2>
+        <blockquote>
+            <p>
+                Since this fun adventure has come to an end, we recommend you to take a sip of this fun recreation of
+                the original Pac-Man game.
+                We wish you the best luck in finishing the game before the ghosts catch you and most importantly, HAVE
+                FUN.
+                Take a look at this simple guide to understand the basics of our website and the game. <a href="./guide.html">GUIDE</a>
             </p>
         </blockquote>
     </section>
     <section id="conclusion" role="doc-chapter" property="about">
-            <h2>
-                <span>9. </span>Conclusion
-            </h2>
-            <blockquote>
-                <p>
-                    In conclusion, we hope to be able to deliver a top-notch product that will assemble a fun way in which people can experience the legendary Pac-Man game with an added twist. <br>
-                    We thank you for reading this Scholarly Article and we'll see you soon! <br>
-                    Cheers!
-                </p>
-            </blockquote>
+        <h2>
+            <span>10. </span>Conclusion
+        </h2>
+        <blockquote>
+            <p>
+                In conclusion, we hope to be able to deliver a top-notch product that will assemble a fun way in which
+                people can experience the legendary Pac-Man game with an added twist. <br>
+                We thank you for reading this Scholarly Article and we'll see you soon! <br>
+                Cheers!
+            </p>
+        </blockquote>
     </section>
 </body>
 
