@@ -1,0 +1,14 @@
+body{
+	margin:0px;
+	padding:0px;
+	background: #2F4550;
+}
+
+#game{
+	background: #AFBED1;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-320px;
+	margin-top:-180px;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--<html lang="en">-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pamaf</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.png" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/play_page.css" />
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+
+
+    <script defer src="/__/firebase/5.8.1/firebase-app.js"></script>
+    <script defer src="/__/firebase/5.8.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.8.1/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/5.8.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.8.1/firebase-storage.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+</head>
+
+<body>
+
+    <nav class="navBar">
+        <img src="../img/logo.png" alt="Pamaf" class="logo">
+        <a href="../index.html">Home</a>
+        <a href="./rules.html">Rules</a>
+        <a href="./scoreboard.html">Scoreboard</a>
+        <a href="./history.html">History</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+    <div>
+        <div id="gameBox">
+            <img src="../img/arrow.png" class="back_img_map" alt="back" onclick="change_div('gameBox','options_box')"><br><br>
+            <img src="../img/game_sample.png" class="map" alt="game_map">
+        </div>
+        <div class="smol_box" id="login_box">
+            <img src="../img/pacm.gif" alt="pacman_gif">
+            <p>Connect with</p>
+            <span class="login">
+                <button class="cool_button" onclick="facebookLogin()">
+                    <img src="../img/facebook.png" alt="facebook-logo">
+                </button>
+                <button class="cool_button" onclick="googleLogin()">
+                    <img src="../img/instagram-icon.png" alt="instagram-logo">
+                </button>
+                <button class="cool_button" onclick="githubLogin()">
+                    <img src="../img/github.png" alt="github-logo">
+                </button>
+            </span>
+
+        </div>
+
+
+
+        <div id="divCanvas">
+            <canvas id="game" width="700" height="550"></canvas>
+            <canvas id="canvas" width="300" height="50"></canvas>
+        </div>
+
+
+
+
+
+
+        <!-- <div class="smol_box" id="options_box">
+            <img src="../img/book.png" alt="book"><br>
+            <button class="cool_button" onclick="change_div('options_box','gameBox')">Singleplayer</button><br><br>
+            <button class="cool_button" onclick="change_div('options_box','multiplayer_rooms')">Multiplayer</button><br><br>
+            <button class="cool_button" onclick="change_div('options_box','settings_box')">Settings</button><br><br>
+            <button class="cool_button" onclick="change_div('options_box','user_profile')">Profile</button><br><br>
+            <button class="cool_button" onclick="change_div('options_box','help_box')">Help</button>
+        </div>
+        <div class="smol_box" id="settings_box">
+            <img src="../img/arrow.png" class="back_img" alt="back" onclick="change_div('settings_box','options_box')">
+            <img src="../img/settings2.png" class="settings_img" alt="settings">
+            <br><br>
+            Mute volume
+            <input type="checkbox" name="volume"><br><br>
+            <div class="language">
+                Language
+                <input type="radio" name="language" value="Romanian">RO
+                <input type="radio" name="language" value="English">EN
+            </div>
+        </div>
+        <div class="smol_box" id="help_box">
+            <img src="../img/arrow.png" class="back_img" alt="back" onclick="change_div('help_box','options_box')">
+            <img src="../img/help2.png" class="help_img" alt="controller">
+            <br><br>
+            Buttons are simple. 
+            Just use W,A,S,D or the arrow keys on your keyboard to move around.
+            For more information, please check out the Rules section.
+        </div>
+        <div class="smol_box" id="multiplayer_rooms">
+            <img src="../img/arrow.png" class="back_img" alt="back" onclick="change_div('multiplayer_rooms','options_box')">
+            <img src="../img/room.png" class="room_img" alt="room">
+            <br>
+            <input type="text">
+            <button class="cool_button" onclick="change_div('multiplayer_rooms','room_box')">Join</button>
+            <button class="cool_button" onclick="change_div('multiplayer_rooms','room_box')">Create</button>
+            <br>
+            Get a code, type it and press "JOIN" or create a room of yours.
+        </div>
+        <div class="smol_box" id="room_box">
+            <img src="../img/arrow.png" class="back_img" alt="back" onclick="change_div('room_box','multiplayer_rooms')">
+            <img src="../img/room.png" class="room_img" alt="room">
+            <br>
+            <input type="text" value="FKJA34AS" readonly>
+            <ul>
+                <li>Mihnea Bigu</li>
+                <li>Andra Oica</li>
+            </ul>
+            <button class="cool_button" onclick="change_div('room_box','gameBox')">Start</button>
+        </div>
+        <div class="smol_box" id="user_profile">
+            <img src="../img/arrow.png" class="back_img" alt="back" onclick="change_div('user_profile','options_box')">
+            <br>
+            <img src="../img/ada.jpg" alt="user" class="user_pic">
+            <h3>Andra Oica</h3>
+            ⚑Score: 10000
+            <br>
+            ☺Ghosts: 6
+            <br>
+            ✞Deaths: 10
+            <br>
+            ★Bonuses: 5
+            <br>
+            ✦Time: 1h20m
+        </div>
+    </div>-->
+
+
+
+        <script type="text/javascript" src="../js/buffer-loader.js"></script>
+        <script type="text/javascript" src="../js/CanvasInput.js"></script>
+
+        <script type="text/javascript" src="../js/maps.js"></script>
+        <script type="text/javascript" src="../js/map_utils.js"></script>
+        <script type="text/javascript" src="../js/pacman/pacman.js"></script>
+        <script type="text/javascript" src="../js/game.js"></script>
+
+        <script src="../js/play_page.js"></script>
+
+
+        
+        
+        <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyCouWiRlhLgzdNlqJFaZPV_kY32HbU6Mxo",
+                authDomain: "pacman-7e95e.firebaseapp.com",
+                databaseURL: "https://pacman-7e95e.firebaseio.com",
+                projectId: "pacman-7e95e",
+                storageBucket: "pacman-7e95e.appspot.com",
+                messagingSenderId: "305242446142"
+            };
+            firebase.initializeApp(config);
+
+        </script>
+</body>
+
+</html>

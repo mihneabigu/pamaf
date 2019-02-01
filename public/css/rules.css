@@ -1,0 +1,59 @@
+.rulesTitle {
+    margin-top: 10%;
+    text-align: center;
+    font-family: 'Hack', serif;
+    color: #D9D9D9;
+    padding-bottom: 1%; 
+}
+
+.rulesTitle img {
+    vertical-align: middle;
+}
+
+.rules {
+    color: #D9D9D9;
+    text-align: justify;
+    font-size: 20pt;
+    max-width: 50%;
+    padding-left: 25%;
+    
+}
+
+.rules table {
+    border-collapse: collapse;
+}
+
+.rules tr:nth-child(odd) {
+    background-color: #D9D9D9;
+    color: #032E37;
+}
+
+.rules td {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.footer {
+    border-top: 1px solid #E9E9E9;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    align-items: center;
+    text-align: center; /*sau justify-items: center doar*/
+    width: 90%;
+    margin-left: 5%;
+    background-color: inherit;
+    /*transform: translate(0%, 530%);*/
+}
+
+.ftr {
+    /*border: 1px solid red;*/
+    font-size: 18px;
+    color: #E9E9E9;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
